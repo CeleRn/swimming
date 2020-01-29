@@ -1,0 +1,35 @@
+{
+  "name": "fronteng_mo_swimming",
+  "version": "0.0.1",
+  "description": "Fronend for mo-swimming.ru",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Udelta",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.2",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@material-ui/core": "^4.9.0",
+    "history": "^4.10.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "react-router": "^5.1.2",
+    "react-router-config": "^5.1.1",
+    "react-router-redux": "^4.0.8",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "typeface-roboto": "0.0.75"
+  }
+}
