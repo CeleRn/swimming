@@ -1,6 +1,6 @@
 import App from '../components/App';
 
-// import HomePage from './pages/HomePage';
+import PageHome from 'PageHome';
 // import ContactsPage from './pages/ContactsPage';
 // import ProductPage from './pages/ProductPage';
 
@@ -9,12 +9,12 @@ import App from '../components/App';
 export default [
     {
         component: App,
-        // routes: [
-        //     {
-        //         component: HomePage,
-        //         path: '/',
-        //         exact: true
-        //     },
+        routes: [
+            {
+                component: PageHome,
+                path: '/',
+                exact: true
+            },
         //     {
         //         component: ContactsPage,
         //         path: '/contacts'
@@ -23,6 +23,6 @@ export default [
         //     //     component: ProductPage,
         //     //     path: '/product/:aliasProduct'
         //     // }
-        // ]
+        ]
     }
 ]

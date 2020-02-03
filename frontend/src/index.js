@@ -8,12 +8,12 @@ import { renderRoutes } from 'react-router-config';
 import Routes from './routes';
 
 import { Provider } from 'react-redux';
-import store from './store'
+import store from 'store'
 import { syncHistoryWithStore } from 'react-router-redux';
 
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import theme from './theme';
+import theme from 'theme';
 
 
 import { StylesProvider, createGenerateClassName } from '@material-ui/core/styles';

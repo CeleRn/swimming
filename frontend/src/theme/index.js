@@ -1,15 +1,15 @@
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import blue from '@material-ui/core/colors/blue';
-// import red from '@material-ui/core/colors/red';
+import orange from '@material-ui/core/colors/orange';
 
 // import './fonts/GothamPro/stylesheet.css';
 // import GothamPro from './fonts/GothamPro';
-
+import 'typeface-roboto';
 
 let theme = createMuiTheme({
   palette: {
-    primary: {main: blue[500]},
-    secondary: {main: blue[300]},
+    primary: {main: blue[600]},
+    secondary: {main: orange[500]},
   },
   typography: {
 

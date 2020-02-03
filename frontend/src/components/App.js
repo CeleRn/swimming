@@ -4,12 +4,13 @@ import BaseLayout from './BaseLayout';
 import { connect } from 'react-redux';
 import { renderRoutes } from 'react-router-config';
 
+const Varible = '111';
 
 const App = ({route}) => {
   
   return (
     <BaseLayout>
-      {renderRoutes(route.routes)}
+      {renderRoutes(route.routes)} 
     </BaseLayout>
   )
 }
