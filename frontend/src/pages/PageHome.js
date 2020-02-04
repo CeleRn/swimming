@@ -3,28 +3,30 @@ import {Helmet} from "react-helmet";
 import { makeStyles } from '@material-ui/core/styles';
 import {fade} from '@material-ui/core/styles/colorManipulator';
 
-
 import { Container } from '@material-ui/core';
+
+import LatestArticles from 'LatestArticles';
 
 import bgHome from 'static/images/home-bg.webp';
 
 const useStyles = makeStyles(theme => ({
   topBlock: {
-    top: -96,
     position: 'relative',
-    paddingTop: 130,
+    paddingTop: 50,
     paddingBottom: 50,
     backgroundPosition: 'center center',
     backgroundRepeat: 'no-repeat no-repeat',
     backgroundImage: `url(${bgHome})`,
     zIndex: -1,
     [theme.breakpoints.up('md')]: {
+      // top: -96,
+      marginTop: -96,
       paddingTop: 160,
-      paddingBottom: 80,
+      paddingBottom: 90,
     },
     [theme.breakpoints.up('lg')]: {
       paddingTop: 180,
-      paddingBottom: 100,
+      paddingBottom: 110,
     },
     '&:before': {
       display: 'block',
@@ -56,7 +58,10 @@ const useStyles = makeStyles(theme => ({
       fontSize: '.495em',
       display: 'block',
       fontWeight: 300,
-      marginBottom: 30,
+      marginBottom: 15,
+      [theme.breakpoints.up('md')]: {
+        marginBottom: 30
+      }
     }
     
   }
@@ -78,8 +83,8 @@ const PageHome = () => {
             <small>Региональная общественная организация</small> Федерация плавания <br/>Московской области
           </h1>
         </Container>
-        
       </div>
+      <LatestArticles />
     </React.Fragment>
   )
 }

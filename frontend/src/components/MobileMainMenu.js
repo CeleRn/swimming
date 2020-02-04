@@ -82,9 +82,7 @@ const MobileMainMenu = () => {
                 </ListItem>
               )
             }
-            
-            })}
-          
+          })}
         </List>
       </SwipeableDrawer>
     </React.Fragment>

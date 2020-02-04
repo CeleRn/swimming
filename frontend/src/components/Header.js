@@ -1,7 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import {fade} from '@material-ui/core/styles/colorManipulator';
+import { Link } from 'react-router-dom';
 import { Container } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
 
 import Logo from 'Logo';
 import MobileMainMenu from 'MobileMainMenu';
@@ -12,7 +13,7 @@ const useStyles = makeStyles(theme => ({
   root: {
 
   },
-    top: {
+  top: {
     display: 'flex',
     alignItems: 'center',
     backgroundColor: theme.palette.grey[200],
@@ -49,6 +50,16 @@ const useStyles = makeStyles(theme => ({
   },
   grow: {
     flexGrow: 1
+  },
+  button: {
+    display: 'none',
+    [theme.breakpoints.up('md')]: {
+      display: 'block'
+    }
+  },
+  link: {
+    color: theme.palette.text.secondary,
+    textDecoration: 'none'
   }
 }),{
   name: "Header"
@@ -62,8 +73,12 @@ export default function Header() {
   return (
    <header className={classes.root}>
      <div className={classes.top}>
-       <Container className={classes.topContainer} maxWidth="xl">
+       <Container className={classes.topContainer} maxWidth="lg">
         <MobileMainMenu/>
+        {/* <Button className={classes.button}>
+          <Link className={classes.link} to="/contacts">Контакты</Link>
+        </Button> */}
+        <Button component={Link} to="/contacts" className={classes.button}>Контакты</Button>
         <div className={classes.grow} />
         <HeaderContacts />
        </Container>

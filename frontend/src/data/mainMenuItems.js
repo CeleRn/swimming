@@ -1,6 +1,7 @@
 export default [
   {
     name: 'Федерация',
+    linkName: 'О федерации',
     href: '/federation',
     desktopVisible: true,
     childs: [
@@ -20,6 +21,7 @@ export default [
   },
   {
     name: 'Соревнования',
+    linkName: 'Все соревнования',
     href: '/competitions',
     desktopVisible: true,
     childs: [
