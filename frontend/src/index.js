@@ -18,6 +18,7 @@ import theme from 'theme';
 
 import { StylesProvider, createGenerateClassName } from '@material-ui/core/styles';
 
+
 const generateClassName = createGenerateClassName({
     productionPrefix: 'o',
     disableGlobal: true
@@ -27,19 +28,20 @@ const browserHistory = createBrowserHistory();
 const history = syncHistoryWithStore(browserHistory, store);
 
 const Index = () => {
-    return (
-      <Provider store={store}>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <StylesProvider generateClassName={generateClassName}>
-            <Router history={history}>
-              {renderRoutes(Routes)}
-            </Router>
-          </StylesProvider>
-        </ThemeProvider>
-      </Provider>
-    );
-  };
+
+  return (
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <StylesProvider generateClassName={generateClassName}>
+          <Router history={history}>
+            {renderRoutes(Routes)}
+          </Router>
+        </StylesProvider>
+      </ThemeProvider>
+    </Provider>
+  );
+};
   
   
   

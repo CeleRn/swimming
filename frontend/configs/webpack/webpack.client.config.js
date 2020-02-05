@@ -52,7 +52,8 @@ const config = (env, argv) => {
         port: 3000,
         injectClient: true,
         injectHot: true,
-        watchContentBase: true
+        watchContentBase: true,
+        historyApiFallback: true
       }
     }
   }

@@ -7,6 +7,8 @@ import { Container } from '@material-ui/core';
 
 import LatestArticles from 'LatestArticles';
 
+
+
 import bgHome from 'static/images/home-bg.webp';
 
 const useStyles = makeStyles(theme => ({
@@ -19,7 +21,6 @@ const useStyles = makeStyles(theme => ({
     backgroundImage: `url(${bgHome})`,
     zIndex: -1,
     [theme.breakpoints.up('md')]: {
-      // top: -96,
       marginTop: -96,
       paddingTop: 160,
       paddingBottom: 90,

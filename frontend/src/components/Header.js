@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
     paddingTop: 25,
     paddingBottom: 25,
     backgroundColor: 'rgba(0,0,0,.4)',
-    // backgroundColor: 'rgba(255,255,255,.4)',
+    backgroundColor: theme.palette.primary.dark,
     [theme.breakpoints.up('md')]: {
       display: 'flex',
     }
@@ -67,17 +67,12 @@ const useStyles = makeStyles(theme => ({
 
 export default function Header() {
   const classes = useStyles();
-  // const [anchorEl, setAnchorEl] = React.useState(null);
   
-
   return (
    <header className={classes.root}>
      <div className={classes.top}>
-       <Container className={classes.topContainer} maxWidth="lg">
+       <Container className={classes.topContainer} maxWidth="xl">
         <MobileMainMenu/>
-        {/* <Button className={classes.button}>
-          <Link className={classes.link} to="/contacts">Контакты</Link>
-        </Button> */}
         <Button component={Link} to="/contacts" className={classes.button}>Контакты</Button>
         <div className={classes.grow} />
         <HeaderContacts />

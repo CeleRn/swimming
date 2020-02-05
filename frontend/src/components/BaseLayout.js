@@ -7,6 +7,7 @@ import Header from 'Header';
 
 const useStyles = makeStyles(theme => ({
   root: {
+    minHeight: 2500
   }
 }),{
   name: 'main'
