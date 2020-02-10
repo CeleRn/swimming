@@ -30,7 +30,8 @@ const useStyles = makeStyles(theme => ({
   },
   link: {
     color: '#000',
-    textDecoration: 'none'
+    textDecoration: 'none',
+    textTransform: "uppercase"
   },
   drawerHeader: {
     display: 'flex',
@@ -71,13 +72,13 @@ const MobileMainMenu = () => {
           {mainMenuItems.map((itemMenu, index) => {
             if (itemMenu.childs) {
               return (
-                <ListItemWithCollapse itemMenu={itemMenu} key={`itemMobileMenu${index}`}/>
+                <ListItemWithCollapse itemMenu={itemMenu} key={`itemMobileMenu${index}`} handleDrawerClose={handleDrawerClose}/>
               )
             } else {
               return (
                 <ListItem button key={`itemMobileMenu${index}`}>
                   <ListItemText>
-                    <Link className={classes.link} to={itemMenu.href}>{itemMenu.name}</Link>
+                    <Link className={classes.link} to={itemMenu.href} onClick={handleDrawerClose}>{itemMenu.name}</Link>
                   </ListItemText>
                 </ListItem>
               )

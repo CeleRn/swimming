@@ -3,10 +3,11 @@ import App from '../components/App';
 import PageHome from 'PageHome';
 import PageCompetitionsList from 'PageCompetitionsList';
 import PageCompetitionItem from 'PageCompetitionItem';
-// import ContactsPage from './pages/ContactsPage';
-// import ProductPage from './pages/ProductPage';
-
-
+import PageContacts from 'PageContacts';
+import PageManagments from 'PageManagments';
+import PageNewsItem from 'PageNewsItem';
+import PageOrders from 'PageOrders';
+import PageDocuments from 'PageDocuments';
 
 export default [
     {
@@ -25,10 +26,30 @@ export default [
                 component: PageCompetitionsList,
                 path: '/competitions'
             },
-        //     // {
-        //     //     component: ProductPage,
-        //     //     path: '/product/:aliasProduct'
-        //     // }
+            {
+                component: PageContacts,
+                path: '/contacts'
+            },
+            {
+                component: PageManagments,
+                path: '/management'
+            },
+            {
+                component: PageNewsItem,
+                path: '/news/:id'
+            },
+            {
+                component: PageOrders,
+                path: '/orders'
+            },
+            {
+                component: PageDocuments,
+                path: '/documents'
+            },
+            {
+                component: PageHome,
+                path: '/professionals'
+            }
         ]
     }
 ]

@@ -57,6 +57,11 @@ module.exports = (env, argv) => {
           use: ['file-loader?name=static/images/[name]_[hash:8].[ext]']
         },
         {
+          test: /\.(png|webp|svg|jpg|jpeg|gif|ico)$/,
+          include: /node_modules/,
+          use: ['file-loader?name=static/images/[name].[ext]']
+        },
+        {
           test: /\.(woff|woff2|eot|ttf)$/,
           loader: "file-loader",
       },

@@ -1,71 +1,50 @@
 import React from 'react';
 import {Helmet} from "react-helmet";
 import { makeStyles } from '@material-ui/core/styles';
-import {fade} from '@material-ui/core/styles/colorManipulator';
+
 
 import { Container } from '@material-ui/core';
 
+import TopBlock from 'TopBlock';
 import LatestArticles from 'LatestArticles';
+import PartnersList from 'PartnersList';
 
 
 
 import bgHome from 'static/images/home-bg.webp';
 
 const useStyles = makeStyles(theme => ({
-  topBlock: {
-    position: 'relative',
-    paddingTop: 50,
-    paddingBottom: 50,
-    backgroundPosition: 'center center',
-    backgroundRepeat: 'no-repeat no-repeat',
-    backgroundImage: `url(${bgHome})`,
-    zIndex: -1,
-    [theme.breakpoints.up('md')]: {
-      marginTop: -96,
-      paddingTop: 160,
-      paddingBottom: 90,
-    },
-    [theme.breakpoints.up('lg')]: {
-      paddingTop: 180,
-      paddingBottom: 110,
-    },
-    '&:before': {
-      display: 'block',
-      position: 'absolute',
-      top: 0,
-      bottom: 0,
-      left: 0,
-      right: 0,
-      content: "''",
-      backgroundColor: fade(theme.palette.primary.dark, 0.85),
-      zIndex: -1,
-    }
-  },
-  mainTitle: {
-    display: 'block',
-    fontSize: '1.6em',
-    textTransform: 'uppercase',
-    color: '#fff',
-    lineHeight: 1.2,
-    textAlign: 'center',
-    [theme.breakpoints.up('md')]: {
-      fontSize: '2.5em',
-    },
-    [theme.breakpoints.up('lg')]: {
-      fontSize: '3.5em',
-    },
+  // topBlock: {
+  //   position: 'relative',
+  //   paddingTop: 50,
+  //   paddingBottom: 50,
+  //   backgroundPosition: 'center center',
+  //   backgroundRepeat: 'no-repeat no-repeat',
+  //   backgroundImage: `url(${bgHome})`,
+  //   zIndex: -1,
+  //   [theme.breakpoints.up('md')]: {
+  //     marginTop: -96,
+  //     paddingTop: 160,
+  //     paddingBottom: 90,
+  //   },
+  //   [theme.breakpoints.up('lg')]: {
+  //     paddingTop: 180,
+  //     paddingBottom: 110,
+  //   },
+  //   '&:before': {
+  //     display: 'block',
+  //     position: 'absolute',
+  //     top: 0,
+  //     bottom: 0,
+  //     left: 0,
+  //     right: 0,
+  //     content: "''",
+  //     backgroundColor: fade(theme.palette.primary.dark, 0.85),
+  //     zIndex: -1,
+  //   }
+  // },.
 
-    '& > small': {
-      fontSize: '.495em',
-      display: 'block',
-      fontWeight: 300,
-      marginBottom: 15,
-      [theme.breakpoints.up('md')]: {
-        marginBottom: 30
-      }
-    }
-    
-  }
+  
 }),{
   name: 'PageHome'
 });
@@ -78,17 +57,17 @@ const PageHome = () => {
         {/* Meta tags */}
         <title>Федерация плавания Московской области | Официальный сайт</title>
       </Helmet>
-      <div className={classes.topBlock}>
-        <Container>
-          <h1 className={classes.mainTitle}>
-            <small>Региональная общественная организация</small> Федерация плавания <br/>Московской области
-          </h1>
-        </Container>
-      </div>
+      <TopBlock 
+        homePage={true}
+        prefixTitle='Региональная общественная организация'
+        title='Федерация плавания Московской области'
+        textAlignTitle='center'
+        bgImage={bgHome} 
+      />
       <LatestArticles />
+      <PartnersList />
     </React.Fragment>
   )
 }
-
 
 export default PageHome;

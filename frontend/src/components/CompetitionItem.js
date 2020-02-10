@@ -53,7 +53,6 @@ const CompetitionItem = ({competition}) => {
         <Typography className={classes.title} variant="h5" component="h3">{competition.title}</Typography>
         <Typography className={classes.pos} color="textSecondary">{competition.cities}</Typography>
         <Typography className={classes.description} color="textSecondary" gutterBottom>{competition.description}</Typography>
-        
       </CardContent>
       <CardActions classes={classesCardActions}>
         <Button component={Link} to={`/competitions/${competition.id}`} size="small">Подробнее</Button>

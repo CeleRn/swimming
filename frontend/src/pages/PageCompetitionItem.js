@@ -18,8 +18,8 @@ import PeopleIcon from '@material-ui/icons/People';
 import EventIcon from '@material-ui/icons/Event';
 
 const useStyles = makeStyles(theme => ({
-  topBlock: {
-    
+  body: {
+    marginBottom: 50
   },
   mainTitle: {
     display: 'block',
@@ -38,32 +38,8 @@ const useStyles = makeStyles(theme => ({
       marginTop: theme.spacing(8)
     },
   },
-  item: {
-    marginBottom: theme.spacing(2),
-  },
-  icon: {
-    marginRight: 7
-  },
-  date: {
-    display: 'flex',
-    alignItems: 'center',
-    fontWeight: 700,
-    fontSize: 16
-  },
-  itemTitle: {
-    fontSize: 26,
-    fontWeight: 700,
-    color: theme.palette.text.primary,
-    marginBottom: 15,
-  },
-  pos: {
-    display: 'flex',
-    alignItems: 'center',
-    marginBottom: 10
-  },
-  description: {
-    display: 'flex',
-    alignItems: 'center',
+  paragraph: {
+    marginBottom: 15
   }
 }),{
   name: 'PageHome'
@@ -84,9 +60,15 @@ const PageCompetitionsItem = (props) => {
         <title>{competition.title}</title>
       </Helmet>
       <div className={classes.topBlock}>
-        <Container>
+        <Container className={classes.body}>
           <h1 className={classes.mainTitle}>{competition.title}</h1>
-          Информация о соревновании
+          <Typography className={classes.paragraph} component="p">Место проведения: {competition.cities}</Typography>
+          <Typography className={classes.paragraph} component="p">{competition.description}</Typography>
+          {(competition.link) && (
+              <Typography className={classes.paragraph} component="p">
+                <a href={competition.link} target="_blank">Подробная информация</a>
+              </Typography>
+          )}
         </Container>
       </div>
     </React.Fragment>

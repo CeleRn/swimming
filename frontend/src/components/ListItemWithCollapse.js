@@ -17,10 +17,20 @@ const useStyles = makeStyles(theme => ({
   nested: {
     paddingLeft: theme.spacing(4),
   },
+  button: {
+    textTransform: "uppercase",
+  },
+  linkAll: {
+    fontWeight: 700,
+    color: theme.palette.text.secondary
+  },
+  child: {
+    color: theme.palette.text.secondary
+  }
 }));
 
 
-const ListItemWithCollapse = ({itemMenu}) => {
+const ListItemWithCollapse = ({itemMenu, handleDrawerClose}) => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const handleClick = () => {
@@ -28,18 +38,32 @@ const ListItemWithCollapse = ({itemMenu}) => {
   };
   return (
     <React.Fragment>
-      <ListItem button onClick={handleClick}>
+      <ListItem button onClick={handleClick} className={classes.button}>
         <ListItemText primary={itemMenu.name} />
         {open ? <ExpandLess /> : <ExpandMore />}
       </ListItem>
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
+          {(itemMenu.linkName) && (
+            <ListItem 
+              button 
+              className={classes.linkAll}
+              component={Link}
+              to={itemMenu.href}
+              key={`itemMobileMenu-main`}
+              onClick={handleDrawerClose}
+            >
+              {itemMenu.linkName}
+            </ListItem>
+          )}
           {itemMenu.childs.map((child,index) => (
             <ListItem 
               button 
+              className={classes.child}
               component={Link} 
               to={child.href} 
               key={`itemMobileMenu-${itemMenu.name}-${index}`}
+              onClick={handleDrawerClose}
             >
               {child.name}
             </ListItem>

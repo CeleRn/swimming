@@ -10,10 +10,12 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+
 import CompetitionItem from 'CompetitionItem';
+import NewsItem from 'NewsItem';
 
 import competitionsList from 'data/competitionsList.js';
-
+import newsList from 'data/news.js';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -76,13 +78,14 @@ const LatestArticles = () => {
             value={value} 
             indicatorColor="primary"
             textColor="primary"
+            variant="scrollable"
+            scrollButtons="on"
             onChange={handleChange} 
             aria-label="simple tabs example"
-            centered
           >
             <Tab label="Соревнования" {...a11yProps(0)} />
             <Tab label="Последние новости" {...a11yProps(1)} />
-            <Tab label="Документация" {...a11yProps(2)} />
+            {/* <Tab label="Документация" {...a11yProps(2)} /> */}
           </Tabs>
         </Paper>
         <SwipeableViews axis='x' index={value} onChangeIndex={handleChange}>
@@ -104,11 +107,18 @@ const LatestArticles = () => {
             </Grid>
           </TabPanel>
           <TabPanel className={classes.tabpanel} value={value} index={1}>
-            Последние новости
+            <Typography className={classes.tabpanelTitle} variant="h4" component="h2">Последние новости</Typography>
+            {newsList.length > 0 ?
+              newsList.map((news, index) => {
+                return (
+                  <NewsItem news={news}  key={`news-${index}`}/>
+              )}) : 
+              null
+            }
           </TabPanel>
-          <TabPanel className={classes.tabpanel} value={value} index={2}>
+          {/* <TabPanel className={classes.tabpanel} value={value} index={2}>
             Документация
-          </TabPanel>
+          </TabPanel> */}
         </SwipeableViews>
         
       </Container>

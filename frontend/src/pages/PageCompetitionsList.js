@@ -84,7 +84,7 @@ const PageCompetitionsList = () => {
           {competitionsList.length > 0 ?
             competitionsList.map((competition, index) => {
               return (
-                <Card className={classes.item}>
+                <Card className={classes.item} key={`competitionItem${index}`}>
                   <CardActionArea component={Link} to={`/competitions/${competition.id}`} >
                     <Box className={classes.date} bgcolor="primary.light" color="primary.contrastText" p={2}>
                       <EventIcon className={classes.icon}/> {competition.date}

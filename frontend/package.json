@@ -47,10 +47,12 @@
     "react-router-config": "^5.1.1",
     "react-router-dom": "^5.1.2",
     "react-router-redux": "^4.0.8",
+    "react-slick": "^0.25.2",
     "react-swipeable-views": "0.13.3",
     "react-swipeable-views-utils": "0.13.3",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
+    "slick-carousel": "^1.8.1",
     "typeface-roboto": "0.0.75"
   }
 }

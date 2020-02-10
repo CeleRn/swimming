@@ -11,7 +11,7 @@ import HeaderContacts from 'HeaderContacts';
 
 const useStyles = makeStyles(theme => ({
   root: {
-
+    // zIndex: 10
   },
   top: {
     display: 'flex',

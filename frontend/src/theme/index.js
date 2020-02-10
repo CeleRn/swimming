@@ -5,6 +5,9 @@ import orange from '@material-ui/core/colors/orange';
 // import './fonts/GothamPro/stylesheet.css';
 // import GothamPro from './fonts/GothamPro';
 import 'typeface-roboto';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 let theme = createMuiTheme({
   palette: {
