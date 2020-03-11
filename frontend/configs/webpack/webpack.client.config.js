@@ -22,7 +22,7 @@ const config = (env, argv) => {
     },
     output: {
       path: path.join(__dirname, '..', '..', 'build', 'public'),
-      filename: 'static/js/[name]_[hash:8].js',
+      filename: 'assets/js/[name]_[hash:8].js',
       publicPath: '/'
     },
     plugins: [
@@ -31,7 +31,7 @@ const config = (env, argv) => {
           inject: 'body'
       }),
       new InterpolateHtmlPlugin({
-        'PUBLIC_URL': '/static'
+        'PUBLIC_URL': '/assets'
       })
     ]
   }

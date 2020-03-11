@@ -54,16 +54,16 @@ module.exports = (env, argv) => {
         {
           test: /\.(png|webp|svg|jpg|jpeg|gif|ico)$/,
           exclude: /node_modules/,
-          use: ['file-loader?name=static/images/[name]_[hash:8].[ext]']
+          use: ['file-loader?name=assets/images/[name]_[hash:8].[ext]']
         },
         {
           test: /\.(png|webp|svg|jpg|jpeg|gif|ico)$/,
           include: /node_modules/,
-          use: ['file-loader?name=static/images/[name].[ext]']
+          use: ['file-loader?name=assets/images/[name].[ext]']
         },
         {
           test: /\.(woff|woff2|eot|ttf)$/,
-          loader: "file-loader",
+          loader: "file-loader?name=assets/fonts/[name].[ext]'",
       },
       ]
     },

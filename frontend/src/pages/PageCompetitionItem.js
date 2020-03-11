@@ -9,7 +9,7 @@ import Card from '@material-ui/core/Card';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import CardActionArea from '@material-ui/core/CardActionArea';
-
+import DownloadsList from 'DownloadsList';
 
 import competitionsList from 'data/competitionsList.js';
 
@@ -68,6 +68,9 @@ const PageCompetitionsItem = (props) => {
               <Typography className={classes.paragraph} component="p">
                 <a href={competition.link} target="_blank">Подробная информация</a>
               </Typography>
+          )}
+          {(competition.downloads) && (
+            <DownloadsList downloadsList={competition.downloads} />
           )}
         </Container>
       </div>

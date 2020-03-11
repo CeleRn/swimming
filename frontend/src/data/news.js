@@ -1,6 +1,21 @@
 export default [
   {
     id: 1,
+    date: '2020-03-08',
+    title: 'Итоги III этапа соревнований "Золотая Рыбка"',
+    downloads: [
+      {
+        title: 'Командное Первенство. ЗР III этап',
+        link: 'http://mo-swimming.ru/static/documents/2020/03/Командное Первенство. ЗР III этап.pdf'
+      },
+      {
+        title: 'Командное Первенство. ЗР III этап',
+        link: 'http://mo-swimming.ru/static/documents/2020/03/Итоговый. III этап.pdf'
+      },
+    ]
+  },
+  {
+    id: 1,
     date: '2020-02-09',
     title: 'Проект положения о соревнованиях в Московской области на 2020 г.',
     downloads: [
