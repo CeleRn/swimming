@@ -13,6 +13,14 @@ export default [
       {
         title: 'Стартовый I день',
         link: '/static/competitions/2020/03/Стартовый I день.pdf'
+      },
+      {
+        title: 'Стартовый 2 день',
+        link: '/static/competitions/2020/03/Стартовый 2 день.pdf'
+      },
+      {
+        title: 'Стартовый 3 день',
+        link: '/static/competitions/2020/03/Стартовый 3 день.pdf'
       }
     ]
   },
@@ -36,8 +44,8 @@ export default [
         link: '/static/competitions/2020/03/ПМО_21-24.03.2020.docx'
       },
       {
-        title: 'Файл заявки',
-        link: '/static/competitions/2020/03/ПМО_21-24.03.2020.lxf'
+        title: 'Файл заявки (добавлена новая 12.03.2020 г.)',
+        link: '/static/competitions/2020/03/ПМО 21-24.03.2020  1.lxf'
       }
     ]
   },
