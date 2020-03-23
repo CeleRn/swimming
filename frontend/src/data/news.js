@@ -1,5 +1,31 @@
 export default [
   {
+    id: 9,
+    date: '2020-03-23',
+    title: 'Интервью главного тренера Коршунова В.Ф. для Радио 1',
+    links: [
+      {
+        title: 'Видео: Интервью Коршунова В.Ф. для Радио 1',
+        link: 'https://cloud.mail.ru/stock/c9bkYPhhnpfyLy4d8AA4G1b1/dsyRCpLoSD3/%D0%A0%D0%B0%D0%B4%D0%B8%D0%BE%20%D0%9C%D0%BE%D1%81.%20%D0%BE%D0%B1%D0%BB.%2019.03.2020%20%D0%9A%D0%BE%D1%80%D1%88%D1%83%D0%BD%D0%BE%D0%B2%20%D0%92.%D0%A4..mp4',
+      },
+      {
+        title: 'Радио 1: Развитие плавания в Московской области',
+        link: 'https://radio1.news/article/razvitie-plavaniya-v-moskovskoj-oblasti-39506'
+      }
+    ]
+  },
+  {
+    id: 8,
+    date: '2020-03-23',
+    title: 'Видео с Первенства Московской области, Раменское, 11-14 марта 2020 г.',
+    links: [
+      {
+        title: 'Видео: Первенство Московской области, Раменское, 11-14 марта 2020 г.',
+        link: 'https://cloud.mail.ru/stock/c9bkYPhhnpfyLy4d8AA4G1b1/dCgwDdzTtUy/%D0%9F%D0%B5%D1%80.%20%D0%9C%D0%9E%20%D0%A0%D0%B0%D0%BC%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D0%B5%2011-14.03.2020.mkv'
+      }
+    ]
+  },
+  {
     id: 7,
     date: '2020-03-20',
     title: 'ВАЖНО! Решение ВФП по календарю 2020 г.',

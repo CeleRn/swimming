@@ -21,9 +21,22 @@ const useStyles = makeStyles(theme => ({
   },
   body: {
     marginBottom: 50
+  },
+  linksList: {
+
+  },
+  link: {
+    fontSize: '1.3em',
+    lineHeight: '2em',
+    color: theme.palette.text.primary,
+    textDecoration: 'none',
+    '&:hover,&:focus': {
+      textDecoration: 'underline'
+    }
+    
   }
 }),{
-  name: 'PageHome'
+  name: 'PageNewsItem'
 });
 
 const PageNewsItem = (props) => {
@@ -48,6 +61,15 @@ const PageNewsItem = (props) => {
       </TopBlock>
       <Container className={classes.body}>
         <Typography variant="body1" color="textSecondary" component="p">{news.body}</Typography>
+        {(news.links) && (
+          <ul className={classes.linksList}>
+            {news.links.map((item,index) => (
+              <li key={`link-${index}`}>
+                <a className={classes.link} href={item.link} target="_blank">{item.title}</a>
+              </li>
+            ))}
+          </ul>
+        )}
         {(news.downloads) && (
           <DownloadsList downloadsList={news.downloads} />
         )}
