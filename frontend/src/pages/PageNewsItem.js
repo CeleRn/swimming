@@ -46,7 +46,6 @@ const PageNewsItem = (props) => {
   useEffect(() => {
     setNews(newsList.filter(item => item.id === Number(props.match.params.id))[0]);
   })
-  console.log('news',news);
 
   return (
     <React.Fragment>
