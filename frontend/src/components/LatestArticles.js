@@ -83,13 +83,23 @@ const LatestArticles = () => {
             onChange={handleChange} 
             aria-label="simple tabs example"
           >
-            <Tab label="Соревнования" {...a11yProps(0)} />
             <Tab label="Последние новости" {...a11yProps(1)} />
+            <Tab label="Соревнования" {...a11yProps(0)} />
             {/* <Tab label="Документация" {...a11yProps(2)} /> */}
           </Tabs>
         </Paper>
         <SwipeableViews axis='x' index={value} onChangeIndex={handleChange}>
           <TabPanel className={classes.tabpanel} value={value} index={0}>
+            <Typography className={classes.tabpanelTitle} variant="h4" component="h2">Последние новости</Typography>
+            {newsList.length > 0 ?
+              newsList.map((news, index) => {
+                return (
+                  <NewsItem news={news}  key={`news-${index}`}/>
+              )}) : 
+              null
+            }
+          </TabPanel>
+          <TabPanel className={classes.tabpanel} value={value} index={1}>
             <Typography className={classes.tabpanelTitle} variant="h4" component="h2">Ближайшие соревнования</Typography>
             <Grid container spacing={2}>
               {competitionsList.length > 0 ?
@@ -106,16 +116,7 @@ const LatestArticles = () => {
               </Grid>
             </Grid>
           </TabPanel>
-          <TabPanel className={classes.tabpanel} value={value} index={1}>
-            <Typography className={classes.tabpanelTitle} variant="h4" component="h2">Последние новости</Typography>
-            {newsList.length > 0 ?
-              newsList.map((news, index) => {
-                return (
-                  <NewsItem news={news}  key={`news-${index}`}/>
-              )}) : 
-              null
-            }
-          </TabPanel>
+          
           {/* <TabPanel className={classes.tabpanel} value={value} index={2}>
             Документация
           </TabPanel> */}

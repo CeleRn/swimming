@@ -21,7 +21,19 @@ export default [
       {
         title: 'Стартовый 3 день',
         link: '/static/competitions/2020/03/Стартовый 3 день.pdf'
-      }
+      },
+      {
+        title: 'Стартовый 4 день',
+        link: '/static/competitions/2020/03/Стартовый 4 день.pdf'
+      },
+      {
+        title: 'Командное первенство',
+        link: '/static/competitions/2020/03/Командное Первенство.pdf'
+      },
+      {
+        title: 'Итоговый первенство',
+        link: '/static/competitions/2020/03/Итоговый Первенство МО.pdf'
+      },
     ]
   },
   {
@@ -42,6 +54,10 @@ export default [
       {
         title: 'Подробная информация',
         link: '/static/competitions/2020/03/ПМО_21-24.03.2020.docx'
+      },
+      {
+        title: 'План проведения соревнований',
+        link: '/static/competitions/2020/03/План провед сорев 2020_ПМО Дельфин.doc'
       },
       {
         title: 'Файл заявки (добавлена новая 12.03.2020 г.)',
