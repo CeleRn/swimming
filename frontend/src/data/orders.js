@@ -1,5 +1,9 @@
 export default [
   {
+    title: "Приказ № 26 нг от 30.03. 2020 г. О присвоении спортивного звания «Мастер спорта России»",
+    link:"https://mo-swimming.ru/static/news/2020/04/Приказ Мастер спорта, МС РФ,  № 26 нг от 30.03. 2020 г..docx"
+  },
+  {
     title: "Отказы от 05.12.19",
     link:"http://mo-swimming.ru/static/docs/razryady/2020-01-15/15-01-20/05-12-19.pdf"
   },
