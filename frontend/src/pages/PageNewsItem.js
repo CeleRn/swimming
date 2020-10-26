@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import {Helmet} from "react-helmet";
 import { makeStyles } from '@material-ui/core/styles';
-
+import ReactMarkdown from 'react-markdown';
 
 import Container from '@material-ui/core/Container';
 import Button from '@material-ui/core/Button';
@@ -33,7 +33,9 @@ const useStyles = makeStyles(theme => ({
     '&:hover,&:focus': {
       textDecoration: 'underline'
     }
-    
+  },
+  image: {
+    maxWidth: '100%'
   }
 }),{
   name: 'PageNewsItem'
@@ -59,7 +61,15 @@ const PageNewsItem = (props) => {
           </div>
       </TopBlock>
       <Container className={classes.body}>
-        <Typography variant="body1" color="textSecondary" component="p">{news.body}</Typography>
+        {(news.image) && (
+          <img className={classes.image} src={news.image} alt={news.title} />
+        )}
+		{(news.bodyMarkdown) && (
+          <ReactMarkdown>{news.bodyMarkdown}</ReactMarkdown>
+        )}
+		{(!news.bodyMarkdown) && (
+          <Typography variant="body1" color="textSecondary" component="p">{news.body}</Typography>
+        )}
         {(news.links) && (
           <ul className={classes.linksList}>
             {news.links.map((item,index) => (

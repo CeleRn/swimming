@@ -3,8 +3,8 @@ export default [
     title: 'Сборная команда МО по плаванию',
     downloads: [
       {
-        title: 'Список членов сборной команды МО по плаванию на 2018 год',
-        link: 'http://mo-swimming.ru/static/docs/documents_FPMO/sbornaya-mo-2018.pdf'
+        title: 'Список членов сборной команды МО по плаванию на 19.06.2020 г.',
+        link: 'https://mo-swimming.ru/static/news/2020/06/Сб. Мос. обл. 19.06.2020.pdf'
       }
     ]
   },
@@ -12,8 +12,29 @@ export default [
     title: 'Соревнования по плаванию',
     downloads: [
       {
-        title: 'Положение о проведении соревнований по плаванию на 2018 год.',
-        link: 'http://mo-swimming.ru/static/docs/documents_FPMO/polojenie-mo-2018.pdf'
+        title: 'Положение о проведении соревнований по плаванию на 2020 год.',
+        link: 'https://mo-swimming.ru/static/docs/champ_mo/09-02-20/doc.pdf'
+      },
+	  {
+        title: 'Информационное письмо о Первенстве Московской обл. ноября 2020 г.',
+        link: 'https://mo-swimming.ru/static/news/2020/10/1.Информ. письмо  Пер. МО ноябрь 2020 Рамнское.pdf'
+      },
+	  {
+        title: 'Проект допуска спортсменов к Всероссийским Соревнованиям 2020 г.',
+        link: 'https://mo-swimming.ru/static/news/2020/10/Сор-я в ВФП окт. 2020.docx'
+      }
+    ]
+  },
+  {
+    title: 'Судейские звания и разряды',
+    downloads: [
+      {
+        title: 'Вся информация по присвоению разрядов',
+        link: 'https://mo-swimming.ru/static/docs/razryady/prisvoenie-razryadov.rar'
+      },
+	  {
+        title: 'Информационное письмо по разрядам',
+        link: 'https://mo-swimming.ru/static/docs/razryady/info-letter-razryady.doc'
       },
     ]
   },
@@ -46,8 +67,8 @@ export default [
         link: 'http://mo-swimming.ru/static/docs/documents_FPMO/dogovor-s-fpmo.docx'
       },
       {
-        title: 'Уведомление о членском взносе',
-        link: 'http://mo-swimming.ru/static/docs/documents_FPMO/Uvedomlenie-chlenskiy-vznos.pdf'
+        title: 'Уведомление о членском взносе за 2021 г.',
+        link: 'https://mo-swimming.ru/static/news/2020/10/Уведомление.pdf'
       },{
         title: 'Информация для членов Федерации',
         link: 'http://mo-swimming.ru/static/docs/documents_FPMO/info-for-memders.doc'
