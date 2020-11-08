@@ -120,8 +120,39 @@ export default [
 	  {
         title: 'Командное первенство',
         link: 'https://mo-swimming.ru/static/news/2020/10/Командное Первенство.pdf'
+      },
+	  {
+        title: 'Итоги: Многоборье спина. Юноши',
+        link: 'https://mo-swimming.ru/static/news/2020/10/Многоборье спина. Юноши.pdf'
+      },
+	  {
+        title: 'Итоги: Многоборье спина. Девушки',
+        link: 'https://mo-swimming.ru/static/news/2020/10/Многоборье спина.  Девушки.pdf'
+      },
+	  {
+        title: 'Итоги: Многоборье вольный стиль. Юноши',
+        link: 'https://mo-swimming.ru/static/news/2020/10/Многоборье вольный стиль. Юноши.pdf'
+      },
+	  {
+        title: 'Итоги: Многоборье вольный стиль. Девушки',
+        link: 'https://mo-swimming.ru/static/news/2020/10/Многоборье вольный стиль. Девушки.pdf'
+      },
+	  {
+        title: 'Итоги: Многоборье брасс. Юноши',
+        link: 'https://mo-swimming.ru/static/news/2020/10/Многоборье брасс. Юноши.pdf'
+      },
+	  {
+        title: 'Итоги: Многоборье брасс. Девушки',
+        link: 'https://mo-swimming.ru/static/news/2020/10/Многоборье брасс. Девушки.pdf'
+      },
+	  {
+        title: 'Итоги: Многоборье бат. Юноши',
+        link: 'https://mo-swimming.ru/static/news/2020/10/Многоборье бат. Юноши.pdf'
+      },
+	  {
+        title: 'Итоги: Многоборье бат. Девушки',
+        link: 'https://mo-swimming.ru/static/news/2020/10/Многоборье бат. Девушки.pdf'
       }
-	  
     ]
 	},
 	{
