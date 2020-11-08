@@ -35,7 +35,13 @@ const useStyles = makeStyles(theme => ({
     }
   },
   image: {
-    maxWidth: '100%'
+    maxWidth: '100%',
+	float: 'left',
+	marginRight: 24,
+	marginBottom: 16
+  },
+  clearfix: {
+	clear: 'both'
   }
 }),{
   name: 'PageNewsItem'
@@ -82,6 +88,7 @@ const PageNewsItem = (props) => {
         {(news.downloads) && (
           <DownloadsList downloadsList={news.downloads} />
         )}
+		<div className={classes.clearfix}/>
       </Container>
       
     </React.Fragment>

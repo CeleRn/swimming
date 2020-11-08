@@ -1,5 +1,43 @@
 export default [
 	{
+    id: 11,
+    date: '21 ноября 2020г.',
+    title: 'Московские областные соревнования по плаванию среди спортсменов младшего возраста «Золотая Рыбка». I этап',
+    cities: 'Руза',
+    downloads: [
+      {
+        title: 'Информационное письмо',
+        link: 'https://mo-swimming.ru/static/news/2020/11/Информационное письмо. Золотая Рыбка I этап.docx'
+      },
+	  {
+        title: 'Заявка',
+        link: 'https://mo-swimming.ru/static/news/2020/11/ЗР I этап.lxf'
+      }
+    ]
+	},
+	{
+    id: 10,
+    date: 'с 1 по 5 декабря 2020 г.',
+    title: 'Первенство России среди юношей и юниоров',
+    description: 'юноши и девушки юношеского и юниорского возраста',
+    cities: 'Саранск',
+    downloads: [
+      {
+        title: 'Информационное письмо',
+        link: 'https://mo-swimming.ru/static/news/2020/11/Информ. письмо ПР дек.2020. Саранск.doc'
+      },
+	  {
+        title: 'Вся информация и заявка',
+        link: 'https://mo-swimming.ru/static/news/2020/11/Информац ПР дек. 2020.rar'
+      },
+	  {
+        title: 'Декларации и согласие',
+        link: 'https://mo-swimming.ru/static/news/2020/11/Декларации и согласие ПР дек. 2020.rar'
+      }	
+    ]
+  },
+
+	{
     id: 9,
     date: 'с 5 по 8 ноября 2020 г.',
     title: 'Отборочные соревнования на «Веселый дельфин» — 2020 г. Первенство Московской области',
@@ -11,9 +49,41 @@ export default [
         link: 'https://mo-swimming.ru/static/news/2020/10/Регламент Пер-ва Мос. обл. по плаванию 04-08 окт. 2020..pdf'
       },
 	  {
+        title: 'Заявочный протокол',
+        link: 'https://mo-swimming.ru/static/news/2020/10/Заявочный протокол.pdf'
+      },
+	  {
         title: 'Заявка',
         link: 'https://mo-swimming.ru/static/news/2020/10/ВД заявка.lxf'
-      }	
+      },
+	  {
+        title: 'Стартовый протокол (1 день)',
+        link: 'https://mo-swimming.ru/static/news/2020/10/Стартовый протокол 1 день.pdf'
+      },
+	  {
+        title: 'Стартовый протокол (2 день)',
+        link: 'https://mo-swimming.ru/static/news/2020/10/Стартовый 2 день.pdf'
+      },
+	  {
+        title: 'Стартовый протокол (3 день)',
+        link: 'https://mo-swimming.ru/static/news/2020/10/Стартовый 3 день.pdf'
+      },
+	  {
+        title: 'Стартовый протокол. Вольный стиль, 800 м. Юноши.',
+        link: 'https://mo-swimming.ru/static/news/2020/10/800 вольный стиль юноши.pdf'
+      },
+	  {
+        title: 'Стартовый протокол. Вольный стиль, 800 м. Девушки.',
+        link: 'https://mo-swimming.ru/static/news/2020/10/800 вольный стиль девушки.pdf'
+      },
+	  {
+        title: 'Итоги',
+        link: 'https://mo-swimming.ru/static/news/2020/10/Итоговый.pdf'
+      },
+	  {
+        title: 'Командное первенство',
+        link: 'https://mo-swimming.ru/static/news/2020/10/Командное Первенство.pdf'
+      }
     ]
   },
   {
