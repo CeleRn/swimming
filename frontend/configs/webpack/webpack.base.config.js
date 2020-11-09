@@ -64,7 +64,11 @@ module.exports = (env, argv) => {
         {
           test: /\.(woff|woff2|eot|ttf)$/,
           loader: "file-loader?name=assets/fonts/[name].[ext]'",
-      },
+        },
+        {
+          test: /\.(mp4|webm)$/,
+          loader: "file-loader?name=assets/video/[name].[ext]",
+        },
       ]
     },
     plugins: [
