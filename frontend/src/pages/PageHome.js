@@ -12,6 +12,7 @@ import PartnersList from 'PartnersList';
 
 
 import bgHome from 'static/images/home-bg.webp';
+import bgHomeVideo from 'static/video/bghome_withoutAudio.mp4';
 
 const useStyles = makeStyles(theme => ({
   // topBlock: {
@@ -62,7 +63,8 @@ const PageHome = () => {
         prefixTitle='Региональная общественная организация'
         title='Федерация плавания Московской области'
         textAlignTitle='center'
-        bgImage={bgHome} 
+        bgImage={bgHome}
+        bgVideo={bgHomeVideo}
       />
       <LatestArticles />
       <PartnersList />

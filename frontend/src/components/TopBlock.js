@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
   root: props => ({
     position: 'relative',
     color: (props.bgImage) ? '#ffffff' : theme.palette.text.primary,
-    backgroundImage: (props.bgImage) ? `url('${props.bgImage}')` : 'none',
+    backgroundImage: (props.bgImage && !props.bgVideo) ? `url('${props.bgImage}')` : 'none',
     zIndex: -1,
     paddingTop: (props.homePage) ? 50 : 30,
     paddingBottom: (props.homePage) ? 50 : 30,
@@ -63,10 +63,27 @@ const useStyles = makeStyles(theme => ({
       left: 0,
       right: 0,
       content: (props.bgImage) ? '""' : null,
-      backgroundColor: fade(theme.palette.primary.dark, 0.85),
+      backgroundColor: fade(theme.palette.primary.dark, 0.75),
       zIndex: -2,
     }
   }),
+  videoWrap: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    zIndex: -3,
+  },
+  video: {
+    objectFit: 'cover',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    
+  }
 }),{
   name: "TopBlock"
 });
@@ -77,6 +94,23 @@ const TopBlock = (props) => {
   const theme = useTheme();
   return (
     <div className={classes.root}>
+      {props.bgVideo && (
+        <div className={classes.videoWrap} dangerouslySetInnerHTML={{ __html: `
+        <video 
+          class=${classes.video}
+          // width="100%"
+          // height="auto"
+          autoPlay="autoplay"
+          loop="loop"
+          preload="auto"
+          muted="muted"
+        >
+          <source src=${props.bgVideo} type='video/mp4'></source>
+        </video>` }} />
+        
+      )}
+      
+      
       <Container className={classes.container}>
         <MainTitle 
           color={(props.bgImage) ? '#ffffff' : theme.palette.text.primary}
