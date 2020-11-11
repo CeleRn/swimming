@@ -63,7 +63,7 @@ const useStyles = makeStyles(theme => ({
       left: 0,
       right: 0,
       content: (props.bgImage) ? '""' : null,
-      backgroundColor: fade(theme.palette.primary.dark, 0.75),
+      backgroundColor: fade(theme.palette.primary.dark, (props.bgVideo) ? 0.45 : 0.75),
       zIndex: -2,
     }
   }),
