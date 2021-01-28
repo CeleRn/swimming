@@ -3,16 +3,45 @@ export default [
     id: 11,
     date: '21 ноября 2020г.',
     title: 'Московские областные соревнования по плаванию среди спортсменов младшего возраста «Золотая Рыбка». I этап',
+	description: 'Спортсмены младшего возраста',
     cities: 'Руза',
     downloads: [
       {
-        title: 'Информационное письмо',
-        link: 'https://mo-swimming.ru/static/news/2020/11/Информационное письмо. Золотая Рыбка I этап.docx'
+        title: 'ВАЖНО: Информационное письмо',
+        link: 'https://mo-swimming.ru/static/news/2020/11/1.Информ.Зол. рыбка МО 21 нояб. 2020 Руза.doc'
       },
 	  {
         title: 'Заявка',
         link: 'https://mo-swimming.ru/static/news/2020/11/ЗР I этап.lxf'
-      }
+      },
+	  {
+		  title: 'Дополнительная информация',
+		  link: 'https://mo-swimming.ru/static/news/2020/11/Доп. информация Золотая рыбка 1 этап 2020.docx'
+	  },
+	  {
+		  title: 'Заявочный протокол',
+		  link: 'https://mo-swimming.ru/static/news/2020/11/Заявочный протокол.pdf'
+	  },
+	  {
+		  title: 'Стартовый протокол',
+		  link: 'https://mo-swimming.ru/static/news/2020/11/Стартовый протокол. Золотая Рыбка.pdf'
+	  },
+	  {
+		  title: 'Итоги',
+		  link: 'https://mo-swimming.ru/static/news/2020/11/Итоговый ЗР I этап.pdf'
+	  },
+	  {
+		  title: 'Командное первенство',
+		  link: 'https://mo-swimming.ru/static/news/2020/11/Командное Первенство.pdf'
+	  },
+	  {
+		  title: 'Многоборье девушки I этап',
+		  link: 'https://mo-swimming.ru/static/news/2020/11/Многоборье девушки I этап.pdf'
+	  },
+	  {
+		  title: 'Многоборье юноши I этап',
+		  link: 'https://mo-swimming.ru/static/news/2020/11/Многоборье юноши I этап.pdf'
+	  }
     ]
 	},
 	{
