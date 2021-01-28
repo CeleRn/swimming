@@ -8,48 +8,52 @@ import PageManagments from 'PageManagments';
 import PageNewsItem from 'PageNewsItem';
 import PageOrders from 'PageOrders';
 import PageDocuments from 'PageDocuments';
+import PageMaterialsList from 'PageMaterialsList';
+import PageMaterialItem from 'PageMaterialItem';
 
-export default [
-    {
-        component: App,
-        routes: [
-            {
-                component: PageHome,
-                path: '/',
-                exact: true
-            },
-            {
-                component: PageCompetitionItem,
-                path: '/competitions/:id'
-            },
-            {
-                component: PageCompetitionsList,
-                path: '/competitions'
-            },
-            {
-                component: PageContacts,
-                path: '/contacts'
-            },
-            {
-                component: PageManagments,
-                path: '/management'
-            },
-            {
-                component: PageNewsItem,
-                path: '/news/:id'
-            },
-            {
-                component: PageOrders,
-                path: '/orders'
-            },
-            {
-                component: PageDocuments,
-                path: '/documents'
-            },
-            {
-                component: PageHome,
-                path: '/professionals'
-            }
-        ]
-    }
-]
+export default [{
+    component: App,
+    routes: [{
+            component: PageHome,
+            path: '/',
+            exact: true
+        },
+        {
+            component: PageCompetitionItem,
+            path: '/competitions/:id'
+        },
+        {
+            component: PageCompetitionsList,
+            path: '/competitions'
+        },
+        {
+            component: PageContacts,
+            path: '/contacts'
+        },
+        {
+            component: PageManagments,
+            path: '/management'
+        },
+        {
+            component: PageNewsItem,
+            path: '/news/:id'
+        },
+        {
+            component: PageOrders,
+            path: '/orders'
+        },
+        {
+            component: PageDocuments,
+            path: '/documents'
+        },
+        {
+            component: PageMaterialItem,
+            path: '/professionals/materials/:id'
+        },
+        {
+            component: PageMaterialsList,
+            path: '/professionals/materials'
+        }
+
+    ]
+}]
