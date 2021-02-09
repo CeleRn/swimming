@@ -40,10 +40,10 @@ const PageMaterialsList = (props) => {
     <React.Fragment>
       <Helmet>
         {/* Meta tags */}
-        <title>Материалы для профессиональных плавцов</title>
+        <title>Материалы для профессиональных пловцов</title>
       </Helmet>
       <TopBlock 
-        title="Материалы для профессиональных плавцов"
+        title="Материалы для профессиональных пловцов"
         textAlignTitle='left'
       />
       <Container className={classes.body}>
