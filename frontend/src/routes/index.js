@@ -10,6 +10,8 @@ import PageOrders from 'PageOrders';
 import PageDocuments from 'PageDocuments';
 import PageMaterialsList from 'PageMaterialsList';
 import PageMaterialItem from 'PageMaterialItem';
+import PagePlacesList from 'PagePlacesList';
+
 
 export default [{
     component: App,
@@ -53,7 +55,10 @@ export default [{
         {
             component: PageMaterialsList,
             path: '/professionals/materials'
+        },
+        {
+            component: PagePlacesList,
+            path: '/professionals/places'
         }
-
     ]
 }]

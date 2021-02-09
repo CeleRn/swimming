@@ -47,22 +47,18 @@ export default [{
     },
     {
         name: 'Профессионалам',
-        href: '/professionals/materials',
+        href: '/professionals',
         desktopVisible: true,
-        // childs: [
-        //   {
-        //     name: 'Сборы',
-        //     href: '/professionals/fees'
-        //   },
-        //   {
-        //     name: 'Материалы',
-        //     href: '/professionals/materials'
-        //   },
-        //   {
-        //     name: 'Таблица очков FINA',
-        //     href: '/fina-tables'
-        //   },
-        // ]
+        childs: [
+          {
+            name: 'Сборы',
+            href: '/professionals/places'
+          },
+          {
+            name: 'Материалы',
+            href: '/professionals/materials'
+          }
+        ]
     },
     {
         name: 'Контакты',
