@@ -93,10 +93,10 @@ const PagePlacesList = (props) => {
     <React.Fragment>
       <Helmet>
         {/* Meta tags */}
-        <title>Места, для тренировок и спортивных сборов</title>
+        <title>Места для тренировок и спортивных сборов</title>
       </Helmet>
       <TopBlock 
-        title="Места, для тренировок и спортивных сборов"
+        title="Места для тренировок и спортивных сборов"
         textAlignTitle='left'
       />
       <Container className={classes.body}>
