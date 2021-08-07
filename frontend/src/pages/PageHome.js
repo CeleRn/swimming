@@ -40,7 +40,7 @@ const useStyles = makeStyles(theme => ({
   //     left: 0,
   //     right: 0,
   //     content: "''",
-  //     backgroundColor: fade(theme.palette.primary.dark, 0.85),
+  //     backgroundColor: alpha(theme.palette.primary.dark, 0.85),
   //     zIndex: -1,
   //   }
   // },.

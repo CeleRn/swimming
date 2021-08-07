@@ -1,7 +1,7 @@
 import React from 'react';
 import {Helmet} from "react-helmet";
 import { makeStyles } from '@material-ui/core/styles';
-import {fade} from '@material-ui/core/styles/colorManipulator';
+import {alpha} from '@material-ui/core/styles/colorManipulator';
 import { Link } from 'react-router-dom';
 
 import Container from '@material-ui/core/Container';

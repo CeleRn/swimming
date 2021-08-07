@@ -1,15 +1,13 @@
-import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
+import { createTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import blue from '@material-ui/core/colors/blue';
 import orange from '@material-ui/core/colors/orange';
 
-// import './fonts/GothamPro/stylesheet.css';
-// import GothamPro from './fonts/GothamPro';
 import 'typeface-roboto';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-let theme = createMuiTheme({
+let theme = createTheme({
   palette: {
     primary: {main: blue[600]},
     secondary: {main: orange[500]},

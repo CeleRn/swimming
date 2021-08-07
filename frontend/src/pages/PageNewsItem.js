@@ -10,6 +10,8 @@ import Typography from '@material-ui/core/Typography';
 import TopBlock from 'TopBlock';
 import DownloadsList from 'DownloadsList';
 
+import ImagesCarousel from 'ImagesCarousel';
+
 import newsList from 'data/news.js';
 
 import EventIcon from '@material-ui/icons/Event';
@@ -36,12 +38,20 @@ const useStyles = makeStyles(theme => ({
   },
   image: {
     maxWidth: '100%',
-	float: 'left',
-	marginRight: 24,
-	marginBottom: 16
+    float: 'left',
+    marginRight: 24,
+    marginBottom: 16
+  },
+  carousel: {
+    
+    [theme.breakpoints.up('md')]: {
+      width: '50%',
+      float: 'left',
+      marginRight: 15,
+    }
   },
   clearfix: {
-	clear: 'both'
+	  clear: 'both'
   }
 }),{
   name: 'PageNewsItem'
@@ -70,17 +80,26 @@ const PageNewsItem = (props) => {
         {(news.image) && (
           <img className={classes.image} src={news.image} alt={news.title} />
         )}
-		{(news.bodyMarkdown) && (
-          <ReactMarkdown>{news.bodyMarkdown}</ReactMarkdown>
+        {(news.imagesList) && (
+          <div className={classes.carousel}>
+            <ImagesCarousel imagesList={news.imagesList}/>
+          </div>
+          
         )}
-		{(!news.bodyMarkdown) && (
-          <Typography variant="body1" color="textSecondary" component="p">{news.body}</Typography>
+        {(news.bodyMarkdown) && (
+          <div>
+            <ReactMarkdown>{news.bodyMarkdown}</ReactMarkdown>
+          </div>
         )}
-		{(news.video) && (
-			<video width="480" height="270" controls="controls">
-			   <source src={news.video.url} type={news.video.type} />
-			</video>
+        {(!news.bodyMarkdown) && (
+              <Typography variant="body1" color="textSecondary" component="p">{news.body}</Typography>
+            )}
+        {(news.video) && (
+          <video width="480" height="270" controls="controls">
+            <source src={news.video.url} type={news.video.type} />
+          </video>
         )}
+        
         {(news.links) && (
           <ul className={classes.linksList}>
             {news.links.map((item,index) => (
@@ -93,7 +112,7 @@ const PageNewsItem = (props) => {
         {(news.downloads) && (
           <DownloadsList downloadsList={news.downloads} />
         )}
-		<div className={classes.clearfix}/>
+        <div className={classes.clearfix}/>
       </Container>
       
     </React.Fragment>

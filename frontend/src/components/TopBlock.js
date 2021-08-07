@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import {fade} from '@material-ui/core/styles/colorManipulator';
+import {alpha} from '@material-ui/core/styles/colorManipulator';
 
 import Container from '@material-ui/core/Container';
 
@@ -63,7 +63,7 @@ const useStyles = makeStyles(theme => ({
       left: 0,
       right: 0,
       content: (props.bgImage) ? '""' : null,
-      backgroundColor: fade(theme.palette.primary.dark, (props.bgVideo) ? 0.45 : 0.75),
+      backgroundColor: alpha(theme.palette.primary.dark, (props.bgVideo) ? 0.45 : 0.75),
       zIndex: -2,
     }
   }),
