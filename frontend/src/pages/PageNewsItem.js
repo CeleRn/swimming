@@ -76,6 +76,11 @@ const PageNewsItem = (props) => {
 		{(!news.bodyMarkdown) && (
           <Typography variant="body1" color="textSecondary" component="p">{news.body}</Typography>
         )}
+		{(news.video) && (
+			<video width="480" height="270" controls="controls">
+			   <source src={news.video.url} type={news.video.type} />
+			</video>
+        )}
         {(news.links) && (
           <ul className={classes.linksList}>
             {news.links.map((item,index) => (
