@@ -2,6 +2,14 @@ export default [
   {
     title: 'Сборная команда МО по плаванию',
     downloads: [
+		{
+		  title: 'Списки сборной Московской области по плаванию на 2022 г.',
+		  link: 'https://mo-swimming.ru/static/news/2022/01/Список сб. МО 2022.pdf'
+		},
+		{
+		  title: 'Изменения списка сборной Московской области по плаванию на 2022 г.',
+		  link: 'https://mo-swimming.ru/static/news/2022/01/1.Изменен. сб. МО 2022.pdf'
+		},
       {
         title: 'Список членов сборной команды МО по плаванию на 14.01.2021 г.',
         link: 'https://mo-swimming.ru/static/news/2021/01/Списки сб. Мос. обл. 2021.pdf'
@@ -10,10 +18,22 @@ export default [
   },
   {
     title: 'Соревнования по плаванию',
+	
+	
+	
     downloads: [
-	{
+	
+	 {
+		  title: 'Проект Положения о проведении соревнований по плаванию на 2022 год.',
+		  link: 'https://mo-swimming.ru/static/news/2022/01/Проект - Положен Мос. обл. о сорев-ях по  плаванию 2022.pdf'
+	  },
+	  {
+		  title: 'Проект календаря соревнований Московской области на 2022 г.',
+		  link: 'https://mo-swimming.ru/static/news/2021/10/1.1.Проект календаря. сор-й МО. - 2022 г.pdf'
+	  },
+	  {
         title: 'Основное Положение о проведении соревнований по плаванию на 2021 год.',
-        link: 'https://mo-swimming.ru/static/news/2021/04/Положен. соревнов Мос. обл. 2021.pdf'
+        link: 'https://mo-swimming.ru/static/news/2021/04/1.Положение сор-й Мос. обл. 2021.pdf'
       },
       {
         title: 'Дополнение к Положению о проведении соревнований по плаванию на 2021 год.',
@@ -45,10 +65,6 @@ export default [
         link: 'https://mo-swimming.ru/static/docs/razryady/prisvoenie-razryadov.rar'
       },
 	  {
-        title: 'Информационное письмо по разрядам',
-        link: 'https://mo-swimming.ru/static/docs/razryady/info-letter-razryady.doc'
-      },
-	  {
 		title: 'Образец ходатайства о присвоении разрядов (29.01.2020)',
 		link: 'https://mo-swimming.ru/static/news/2020/12/Образец Ходатайст на 2-3 и юн. разряды ФПМО 29.01.2020.docx'
 	  },
@@ -71,6 +87,14 @@ export default [
 	  {
 		title: 'Оформление и продление судейских категорий',
 		link: 'https://mo-swimming.ru/static/documents/2021/01/По судьям 26.01.2021.rar'
+	  },
+	  {
+		title: 'Образец таблицы Представления',
+		link: 'https://mo-swimming.ru/static/news/2021/10/Образец таб. передстав МС окт. 2021.docx'
+	  },
+	  {
+		title: 'Список документов необходимых для подачи на присвоения спортивного звания (МС, МСМК, ЗМС)',
+		link: 'https://mo-swimming.ru/static/news/2021/10/Список док. на МС, МСМК, ЗМС..docx'
 	  }
     ]
   },
@@ -79,19 +103,19 @@ export default [
     downloads: [
       {
         title: 'Техническая заявка',
-        link: 'http://mo-swimming.ru/static/docs/documents_FPMO/Tehn_Zayv_SFO_25_10_12.xls'
+        link: 'https://mo-swimming.ru/static/docs/documents_fpmo/Tehn_Zayv_SFO_25_10_12.xls'
       },
       {
         title: 'Заявка на вызов',
-        link: 'http://mo-swimming.ru/static/docs/documents_FPMO/zayavka-na-vyzov.doc'
+        link: 'https://mo-swimming.ru/static/docs/documents_fpmo/zayavka-na-vyzov.doc'
       },
       {
         title: 'Образец именной заявки',
-        link: 'http://mo-swimming.ru/static/docs/documents_FPMO/sample-named-zayavki.doc'
+        link: 'https://mo-swimming.ru/static/docs/documents_fpmo/sample-named-zayavki.doc'
       },
       {
         title: 'Образец списка делегаций',
-        link: 'http://mo-swimming.ru/static/docs/documents_FPMO/sample-delegation-list.doc'
+        link: 'https://mo-swimming.ru/static/docs/documents_fpmo/sample-delegation-list.doc'
       },
     ]
   },
@@ -100,20 +124,20 @@ export default [
     downloads: [
       {
         title: 'Анкета для заключения договора с ФПМО',
-        link: 'http://mo-swimming.ru/static/docs/documents_FPMO/dogovor-s-fpmo.docx'
+        link: 'https://mo-swimming.ru/static/docs/documents_fpmo/dogovor-s-fpmo.docx'
       },
       {
-        title: 'Уведомление о членском взносе за 2021 г.',
-        link: 'https://mo-swimming.ru/static/news/2020/10/Уведомление.pdf'
+        title: 'Уведомление о членском взносе',
+        link: 'https://mo-swimming.ru/static/news/2021/10/Уведомление ФПМО чл. взнос - 2022 г..pdf'
       },{
         title: 'Информация для членов Федерации',
-        link: 'http://mo-swimming.ru/static/docs/documents_FPMO/info-for-memders.doc'
+        link: 'https://mo-swimming.ru/static/docs/documents_fpmo/info-for-memders.doc'
       },{
         title: 'Информация для нечленов Федерации',
-        link: 'http://mo-swimming.ru/static/docs/documents_FPMO/info-for-not-memders.doc'
+        link: 'https://mo-swimming.ru/static/docs/documents_fpmo/info-for-not-memders.doc'
       },{
         title: 'Информация по бухгалтерии',
-        link: 'http://mo-swimming.ru/static/docs/documents_FPMO/info-buhg.doc'
+        link: 'https://mo-swimming.ru/static/docs/documents_fpmo/info-buhg.doc'
       },
     ]
   },
@@ -122,15 +146,15 @@ export default [
     downloads: [
       {
         title: 'Декларации по допингу для тренера',
-        link: 'http://mo-swimming.ru/static/docs/all_russian_comp/11-06-17/declaration-coach.pdf'
+        link: 'https://mo-swimming.ru/static/docs/all_russian_comp/11-06-17/declaration-coach.pdf'
       },
       {
         title: 'Декларации по допингу для спортсменов младше 14 лет',
-        link: 'http://mo-swimming.ru/static/docs/all_russian_comp/11-06-17/declaration-less-14.pdf'
+        link: 'https://mo-swimming.ru/static/docs/all_russian_comp/11-06-17/declaration-less-14.pdf'
       },
       {
         title: 'Декларации по допингу для спортсменов старше 14 лет',
-        link: 'http://mo-swimming.ru/static/docs/all_russian_comp/11-06-17/declaration-more-14.pdf'
+        link: 'https://mo-swimming.ru/static/docs/all_russian_comp/11-06-17/declaration-more-14.pdf'
       },
     ]
   },

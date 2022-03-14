@@ -1,4 +1,4 @@
-import { createTheme, responsiveFontSizes } from '@material-ui/core/styles';
+import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import blue from '@material-ui/core/colors/blue';
 import orange from '@material-ui/core/colors/orange';
 
@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-let theme = createTheme({
+let theme = createMuiTheme({
   palette: {
     primary: {main: blue[600]},
     secondary: {main: orange[500]},
