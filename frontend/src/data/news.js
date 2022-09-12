@@ -1,5 +1,122 @@
 export default [
 {
+    id: 301,
+    date: '2022-09-12',
+    title: 'Информация по проведению собрания ФПМО для представителей спортивных школ и клубов (членов ФПМО).',
+    downloads: [
+      {
+        title: 'Информационное письмо',
+        link: 'https://mo-swimming.ru/static/news/2022/09/Информац письмо собрание ФПМО - окт 2022.pdf'
+      },
+	  {
+        title: 'Бланк: Список представителей спортивных школ и клубов',
+        link: 'https://mo-swimming.ru/static/news/2022/09/1.Собран. 30.10.2022.doc'
+      }
+    ]
+},
+{
+    id: 300,
+    date: '2022-07-27',
+    title: 'Итоги выступления спортсменов МО на «Играх Дружбы»',
+    downloads: [
+      {
+        title: 'Итоги',
+        link: 'https://mo-swimming.ru/static/news/2022/07/Итоги выступления подмосковных спортсменов на «Играх Дружбы» по плаванию июль 2022 г..docx'
+      }
+    ]
+},
+{
+  id: 299,
+  date: '2022-07-05',
+  title: 'Наградной приказ по присвоению «Мастера спорта России»',
+  downloads: [
+    {
+      title: 'Приказ',
+      link: 'https://mo-swimming.ru/static/news/2022/07/Приказ № 76 нг МС от 29.06.2022.docx'
+    }
+  ]
+},
+{
+  id: 298,
+  date: '2022-07-04',
+  title: 'Информация по финалу Кубка России 21-25 июля 2022 г. в Казани',
+  downloads: [
+    {
+      title: 'Информация',
+      link: 'https://mo-swimming.ru/static/news/2022/07/Информация Финал Куб. России 21-25 июля 2022 г.docx'
+    }
+  ]
+},
+{
+  id: 297,
+  date: '2022-06-28',
+  title: 'Список спортсменов сборной МО, допущенных к участию в финале Кубка России 21-25 июля 2022 г. в Казани',
+  downloads: [
+    {
+      title: 'Список',
+      link: 'https://mo-swimming.ru/static/news/2022/06/1.Список МО ФКР июль 2022.xlsx'
+    }
+  ]
+},
+{
+  id: 295,
+  date: '2022-06-14',
+  title: 'Информация по Аккредитации на финал Кубка России в июле 2022 г. в Казани',
+  downloads: [
+    {
+      title: 'Информация',
+      link: 'https://mo-swimming.ru/static/news/2022/06/1.1.Информ Финал Кубка России июль 2022 — копия.docx'
+    },
+    {
+      title: 'Акредитация',
+      link: 'https://mo-swimming.ru/static/news/2022/06/Акредитац.docx'
+    },
+    {
+      title: 'Инструкция_по_регистрации (видео)',
+      link: 'https://mo-swimming.ru/static/news/2022/06/Инструкция_по_регистрации.mp4'
+    },
+    {
+      title: 'Инструкция по регистрации на Игры Дружбы',
+      link: 'https://mo-swimming.ru/static/news/2022/06/Инструкция_по_регистрации_Игры_Дружбы_2022.pdf'
+    },
+    {
+      title: 'Файл заявки',
+      link: 'https://mo-swimming.ru/static/news/2022/06/KR_2022_final_tekhzayavka.lxf'
+    },
+    
+  ]
+},
+{
+  id: 294,
+  date: '2022-06-10',
+  title: 'Информация о финале Кубка России 21-25 июля 2022 г. в Казани',
+  downloads: [
+    {
+      title: 'Информация',
+      link: 'https://mo-swimming.ru/static/news/2022/06/1.Информ Финал Кубка России июль 2022.docx'
+    },
+    {
+      title: 'Информация (дополнительная)',
+      link: 'https://mo-swimming.ru/static/news/2022/06/2.Информ Финал Куб. России июль 2022.docx'
+    },
+    {
+      title: 'Аккредитация',
+      link: 'https://mo-swimming.ru/static/news/2022/06/АККРЕДИТАЦИЯ- ФКР июль 2022.docx'
+    },
+  ]
+},
+{
+  id: 293,
+  date: '2022-06-10',
+  title: 'Приказ о присвоении Мастера спорта',
+  downloads: [
+    {
+      title: 'Приказ о присвоении Мастера спорта',
+      link: 'https://mo-swimming.ru/static/news/2022/06/Приказ о присвоеии МС июнь 2022.docx'
+    }
+  ]
+},
+{
     id: 179,
     date: '2022-03-14',
     title: 'Этап Кубка России с 03-05 апреля 2022 г. в Обнинске',
@@ -26,7 +143,7 @@ export default [
     id: 178,
     date: '2022-03-08',
     title: 'Поздравляем с 8 марта!',
-	image: 'https://mo-swimming.ru/static/news/2022/03/8marta.jpg'
+	  image: 'https://mo-swimming.ru/static/news/2022/03/8marta.jpg'
 },
 {
     id: 177,
@@ -140,14 +257,14 @@ export default [
     date: '2022-02-28',
     title: 'Итоговые протоколы. 1-2 дни. Первенство Московской области.',
     downloads: [
-		{
-		  title: 'Итоговый протокол, 1 день',
-		  link: 'https://mo-swimming.ru/static/news/2022/02/1 день итоговый.pdf'
-		},
-		{
-		  title: 'Итоговый протокол, 2 день',
-		  link: 'https://mo-swimming.ru/static/news/2022/02/2 день итоговый.pdf'
-		}
+      {
+        title: 'Итоговый протокол, 1 день',
+        link: 'https://mo-swimming.ru/static/news/2022/02/1 день итоговый.pdf'
+      },
+      {
+        title: 'Итоговый протокол, 2 день',
+        link: 'https://mo-swimming.ru/static/news/2022/02/2 день итоговый.pdf'
+      }
     ]
 },
 {
