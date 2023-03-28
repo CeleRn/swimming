@@ -2,6 +2,14 @@ export default [
   {
     title: 'Сборная команда МО по плаванию',
     downloads: [
+		{ 
+        title: 'Список сборной Московской области по плаванию на 2023 г.',
+        link: 'https://mo-swimming.ru/static/news/2023/02/Списки сб. МО - 2023..pdf'
+      },
+	  { 
+        title: 'Дополнение в список сборной Московской области по плаванию на 2023 г.',
+        link: 'https://mo-swimming.ru/static/news/2023/02/Додолнен сб. МО 2023 плапние.pdf'
+      },
 		{
 		  title: 'Списки сборной Московской области по плаванию на 2022 г.',
 		  link: 'https://mo-swimming.ru/static/news/2022/01/Список сб. МО 2022.pdf'
@@ -18,14 +26,14 @@ export default [
   },
   {
     title: 'Соревнования по плаванию',
-	
-	
-	
     downloads: [
-	
 	 {
-		  title: 'Проект Положения о проведении соревнований по плаванию на 2022 год.',
-		  link: 'https://mo-swimming.ru/static/news/2022/01/Проект - Положен Мос. обл. о сорев-ях по  плаванию 2022.pdf'
+          title: 'Положение о проведении соревнований по плаванию на 2023 год.',
+          link: 'https://mo-swimming.ru/static/news/2023/01/1.Положен Мос. обл. сор-ях по плаванию 2023.pdf'
+     },
+	 {
+		  title: 'Положение о проведении соревнований по плаванию на 2022 год.',
+		  link: 'https://mo-swimming.ru/static/news/2022/11/Положение о соревнованиях МО 2022.pdf'
 	  },
 	  {
 		  title: 'Проект календаря соревнований Московской области на 2022 г.',
@@ -128,7 +136,7 @@ export default [
       },
       {
         title: 'Уведомление о членском взносе',
-        link: 'https://mo-swimming.ru/static/news/2021/10/Уведомление ФПМО чл. взнос - 2022 г..pdf'
+        link: 'https://mo-swimming.ru/static/news/2022/12/Уведомление ФПМО чл. взнос - 2023 г..pdf'
       },{
         title: 'Информация для членов Федерации',
         link: 'https://mo-swimming.ru/static/docs/documents_fpmo/info-for-memders.doc'
