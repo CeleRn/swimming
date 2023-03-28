@@ -1,7 +1,7 @@
 import App from '../components/App';
 
 import PageHome from 'PageHome';
-import PageCompetitionsList from 'PageCompetitionsList';
+import PageCompetitions from 'PageCompetitions';
 import PageCompetitionItem from 'PageCompetitionItem';
 import PageContacts from 'PageContacts';
 import PageManagments from 'PageManagments';
@@ -25,7 +25,7 @@ export default [{
             path: '/competitions/:id'
         },
         {
-            component: PageCompetitionsList,
+            component: PageCompetitions,
             path: '/competitions'
         },
         {
